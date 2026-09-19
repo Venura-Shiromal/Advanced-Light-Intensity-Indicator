@@ -25,7 +25,8 @@ The ALII module captures ambient light data using a Light Dependent Resistor (LD
 	* Counter
 	* Latch system
 - [x] Simulation of the current value indicator 
-- [ ] Design and simulation of the whole circuit in Falstad
+- [x] Design the whole circuit
+- [ ] Test and simulate the complete circuit
 
 ---
 
