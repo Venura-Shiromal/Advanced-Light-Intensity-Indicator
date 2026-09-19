@@ -14,10 +14,18 @@ The ALII module captures ambient light data using a Light Dependent Resistor (LD
 
 ### Simulation
 
-- [x] Designed the filter (Sallen-Key 2nd order low pass filter at cut-off at 2Hz)
-- [x] Simulated the filter in LTSpice to get the bode plot
-- [x] Simulated subcircuits in Falstad such as the filter, priority encoder, flash ADC (including the encoder), and a multiplexer
-- [ ] Currently building the whole circuit in Falstad
+- [x] Design of the filter (Sallen-Key 2nd order low pass filter at cut-off at 2Hz)
+- [x] Simulation of the filter in LTSpice to get the bode plot
+- [x] Simulation of subcircuits in Falstad 
+	* Low-pass filter
+	* Priority encoder
+	* Flash ADC (including the encoder) 
+	* Multiplexer
+	* Change detector
+	* Counter
+	* Latch system
+- [x] Simulation of the current value indicator 
+- [ ] Design and simulation of the whole circuit in Falstad
 
 ---
 
