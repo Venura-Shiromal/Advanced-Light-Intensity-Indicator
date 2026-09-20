@@ -22,6 +22,7 @@ The ALII module captures ambient light data using a Light Dependent Resistor (LD
 	* Flash ADC (including the encoder) 
 	* Multiplexer
 	* Change detector
+    * Clocks 
 	* Counters
 	* Latch system (3-bit Flip-Flop)
     * 8-bit FIFO Flip-Flop train
