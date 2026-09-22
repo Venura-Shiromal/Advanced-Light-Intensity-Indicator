@@ -31,8 +31,9 @@ The ALII module captures ambient light data using a Light Dependent Resistor (LD
 - [x] Simulation of the current value indicator 
 - [x] Design the whole circuit
 - [x] Test and simulate the complete circuit
-- [ ] Build the circuit with ICs
-- [ ] Simulate the circuit with ICs
+- [x] Build the circuit with ICs
+- [x] Simulate the circuit with ICs
+- [ ] Build and test in breadboards
 
 ---
 
