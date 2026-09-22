@@ -10,7 +10,7 @@
   <g x="352 176 352 208" f="0"/>
   <R x="240 8 176 8" f="16" wf="0" maxv="5"/>
   <pt x="256 136 288 216" f="1" ma="10000" po="0.30200000000000005" sl="Resistance"/>
-  <pt x="288 -32 240 48" f="1" ma="20000" po="0.6188" sl="Light Intensity"/>
+  <pt x="288 -32 240 48" f="1" ma="20000" po="0.9950000000000001" sl="Light Intensity"/>
   <w x="288 64 288 48" f="0"/>
   <w x="256 136 256 112" f="0"/>
   <w x="432 112 432 -32" f="0"/>
@@ -272,8 +272,8 @@
   </ccm>
   <cc x="512 -32 664 24" f="1" mo="Flash_ADC_2">
     <cc ix="15">
-      <And o="5" ix="1"/>
       <Or o="5" ix="2"/>
+      <Or o="5" ix="3"/>
     </cc>
   </cc>
   <ccm nm="Change_Detector" f="0" sx="3" sy="3" bcs="1">
@@ -328,9 +328,9 @@
     <g nn="0" x="688 448 688 480" f="0"/>
   </ccm>
   <cc x="704 -360 808 -320" f="1" mo="Change_Detector">
-    <c vd="-4.6730234351339275e-102" ix="1"/>
+    <c vd="-4.999999999995733" ix="1"/>
     <c vd="-4.995004991078197" ix="4"/>
-    <c vd="-7.142466713180283e-39" ix="7"/>
+    <c vd="-4.999999999995733" ix="7"/>
   </cc>
   <ccm nm="Counter" f="0" sx="3" sy="3" bcs="1">
     <ext nm="CLK" nd="2" ps="0" sd="2"/>
@@ -390,7 +390,7 @@
     <ln nn="4" x="576 176 576 192" f="0" te="OUT"/>
   </ccm>
   <cc x="584 584 704 632" f="1" mo="Counter_Avg">
-    <ctr v4="5" v5="5" v7="5" v8="5" v10="5" ix="0"/>
+    <ctr v2="5" v3="5" v5="5" v6="5" ix="0"/>
   </cc>
   <w x="680 584 704 584" f="0"/>
   <w x="672 160 672 472" f="0"/>
@@ -889,9 +889,35 @@
     <ln nn="4" x="256 1344 272 1344" f="0" te="GND"/>
   </ccm>
   <cc x="720 456 840 368" f="1" mo="Moving_Average">
+    <cc ix="8">
+      <DFlipFlop v1="5" ix="0"/>
+      <DFlipFlop v1="5" ix="1"/>
+      <DFlipFlop v1="5" ix="2"/>
+      <DFlipFlop v1="5" ix="3"/>
+      <DFlipFlop v1="5" ix="4"/>
+      <DFlipFlop v1="5" ix="5"/>
+      <DFlipFlop v1="5" ix="6"/>
+      <DFlipFlop v1="5" ix="7"/>
+    </cc>
     <cc ix="9">
       <DFlipFlop v1="5" ix="0"/>
       <DFlipFlop v1="5" ix="1"/>
+      <DFlipFlop v1="5" ix="2"/>
+      <DFlipFlop v1="5" ix="3"/>
+      <DFlipFlop v1="5" ix="4"/>
+      <DFlipFlop v1="5" ix="5"/>
+      <DFlipFlop v1="5" ix="6"/>
+      <DFlipFlop v1="5" ix="7"/>
+    </cc>
+    <cc ix="10">
+      <DFlipFlop v1="5" ix="0"/>
+      <DFlipFlop v1="5" ix="1"/>
+      <DFlipFlop v1="5" ix="2"/>
+      <DFlipFlop v1="5" ix="3"/>
+      <DFlipFlop v1="5" ix="4"/>
+      <DFlipFlop v1="5" ix="5"/>
+      <DFlipFlop v1="5" ix="6"/>
+      <DFlipFlop v1="5" ix="7"/>
     </cc>
   </cc>
   <ccm nm="3-bit_Flip-Flop" f="0" sx="3" sy="3" bcs="1">
@@ -923,7 +949,9 @@
     <ln nn="2" x="512 208 560 208" f="0" te="OUT2"/>
   </ccm>
   <cc x="704 -176 776 -256" f="1" mo="3-bit_Flip-Flop">
+    <DFlipFlop v1="5" ix="0"/>
     <DFlipFlop v1="5" ix="1"/>
+    <DFlipFlop v1="5" ix="2"/>
   </cc>
   <g x="1048 -152 1048 -144" f="0"/>
   <p x="1048 -208 1048 -152" f="3" me="0" sc="0" re="10000000"/>
@@ -951,7 +979,7 @@
     <ln nn="4" x="672 240 672 256" f="0" te="CLK"/>
   </ccm>
   <cc x="520 584 584 616" f="1" mo="Clock_Avg">
-    <c vd="2.97499665586963" ix="1"/>
+    <c vd="2.11200229970751" ix="1"/>
   </cc>
   <ccm nm="Clock_Latch" f="0" sx="1" sy="1" bcs="1">
     <ext nm="CLK" nd="3" ps="0" sd="3"/>
@@ -966,14 +994,14 @@
     <ln nn="3" x="608 320 656 320" f="0" te="CLK"/>
   </ccm>
   <cc x="840 -392 872 -376" f="1" mo="Clock_Latch">
-    <c vd="1.8864186202771043" ix="4"/>
+    <c vd="1.7149283536697908" ix="4"/>
   </cc>
   <p x="680 584 680 704" f="3" me="0" sc="0" re="10000000"/>
   <g x="680 704 680 712" f="0"/>
   <w x="704 584 720 584" f="0"/>
   <Scope x="864 680 1048 744" f="0">
     <o en="135" sp="1024" f="x2" p="-1" md="7">
-      <p v="0" sc="0.0000762939453125"/>
+      <p v="0" sc="5"/>
     </o>
   </Scope>
   <ccm nm="LowPass_Unity" f="0" sx="3" sy="2" bcs="1">
@@ -999,8 +1027,8 @@
     <ln nn="5" x="288 304 288 336" f="0" te="GND"/>
   </ccm>
   <cc x="288 112 400 208" f="1" mo="LowPass_Unity">
-    <c vd="0.000014186254430281764" ix="2"/>
-    <c vd="1.4186396091692695" ix="3"/>
+    <c vd="0.00004839695213743056" ix="2"/>
+    <c vd="4.839743589743666" ix="3"/>
   </cc>
   <w x="512 680 720 680" f="0"/>
   <w x="696 648 696 536" f="0"/>
