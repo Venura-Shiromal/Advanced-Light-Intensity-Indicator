@@ -1,2 +1,4 @@
 *.workspace
 /Simulations/Proteus/Project Backups/*
+*.raw
+*.log
