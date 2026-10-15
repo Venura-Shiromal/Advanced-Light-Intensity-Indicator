@@ -29,11 +29,15 @@ The ALII module captures ambient light data using a Light Dependent Resistor (LD
 	* Adder tree (24-bit moving average)
     * 7 segment indicators (with decoders)
 - [x] Simulation of the current value indicator 
-- [x] Design the whole circuit
+- [x] Design the schematic of the whole circuit
 - [x] Test and simulate the complete circuit
 - [x] Build the circuit with ICs
 - [x] Simulate the circuit with ICs
-- [ ] Build and test in breadboards
+- [x] Build and test in breadboards
+- [x] Design PCB layout
+- [x] Order PCB
+- [ ] Solder and test for faults
+- [ ] Finish up
 
 ---
 
@@ -47,6 +51,6 @@ The ALII module captures ambient light data using a Light Dependent Resistor (LD
 | **Intensity Range** | Levels 0 (Lowest) to 7 (Highest) |
 | **Stabilization Time Window** | 30 s – 300 s (potentiometer controlled, toggled by switch) |
 | **Averaging Window** | 300 s – 900 s (potentiometer controlled, reset by push button) |
-| **Design Rules** | **No microcontrollers/programmable ICs**; logic gates and flip-flops only |
+| **Design Rules** | **No microcontrollers/programmable ICs**; logic gates and flip-flops only (for ease, timers and counters are allowed) |
 
 ---
