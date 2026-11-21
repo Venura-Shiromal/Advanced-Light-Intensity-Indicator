@@ -36,7 +36,8 @@ The ALII module captures ambient light data using a Light Dependent Resistor (LD
 - [x] Build and test in breadboards
 - [x] Design PCB layout
 - [x] Order PCB
-- [ ] Solder and test for faults
+- [x] Solder PCB
+- [ ] Test for faults
 - [ ] Finish up
 
 ---
